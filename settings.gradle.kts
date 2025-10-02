@@ -1,2 +1,2 @@
-rootProject.name = "FireflySms"
+rootProject.name = "firefly-sms-forwarder"
 include(":app")
