@@ -14,8 +14,7 @@
 ## First run
 
 1. Open the app → menu **⋮ → Notification Access** → enable it for *SMS Forwarder*.
-2. Menu **⋮ → Settings** → paste your webhook URL, e.g.:  
-   `https://script.google.com/macros/s/AKfycbzNJFGWn8HWi-y630IeDbDpDQr2lOpViIC-QmIQg6lAZC9sYpClCRiYQhzuxWa4ic7Oyg/exec?token=Saqa%401122`
+2. Menu **⋮ → Settings** → paste your webhook URL, 
 3. Back to main; select messages → **Forward selected**.
 
 ## Payload
