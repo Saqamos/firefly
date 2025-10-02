@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText android:id="@+id/etUrl"
+        android:hint="Webhook URL (e.g., https://script.google.com/.../exec)"
+        android:inputType="textUri"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/etToken"
+        android:hint="Token (optional)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <CheckBox android:id="@+id/cbAuto"
+        android:text="Auto-forward HSBC SMS"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnSave"
+        android:text="Save Settings"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnRefresh"
+        android:text="Refresh Inbox (last 50)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnSendSelected"
+        android:text="Send Selected to Webhook"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSms"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_marginTop="8dp"/>
+</LinearLayout>
