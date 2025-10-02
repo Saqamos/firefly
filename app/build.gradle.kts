@@ -38,3 +38,21 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 }
+
+android {
+    namespace = "org.example.fireflysms"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "org.example.fireflysms"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = false   // <— important
+    }
+}
